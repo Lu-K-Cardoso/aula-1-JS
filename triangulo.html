@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Triângulo</title>
+</head>
+<body>
+    <script>
+        let valor1 = prompt("Qual o valor do primeiro lado do triângulo?");
+        let valor2 = prompt("Qual o valor do segundo lado do triângulo?");
+        let valor3 = prompt("Qual o valor do terceiro lado do triângulo?");
+
+        let v1 = Number(valor1);
+        let v2 = Number(valor2);
+        let v3 = Number(valor3);
+
+        if(v1 >= v2+v3 || v2 >= v1+v3 || v3 >= v1+v2){
+         alert("Esses valores não formam um triângulo");   
+        }else{
+            if(v1 == v2 && v2 == v3){
+                alert("Triângulo Equilátero");
+            }else if(v1 == v2 || v2 == v3 || v1 == v3){
+                alert("Triângulo Isóceles");
+            }else{
+                alert("Triângulo Escaleno");
+            }
+        }
+    </script>
+</body>
+</html>
